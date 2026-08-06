@@ -37,11 +37,16 @@ Below is some examples of what the automation looks like :
 # Below are steps and screenshots with information on setting targetdriverversions. 
 
 
-⦁	Unzip  targetdriverversions.zip to “downloads”.   
+⦁	Run command from the folder that has the xml   
 ⦁	compares drivers on server to drivercomponents.xml 
+⦁ Format example    
+  
+``` Powershell  
+  Invoke-RestMethod 'https://raw.githubusercontent.com/louisjreevesme/Targetdriverversions/refs/heads/main/targetdriverversions.ps1' | Invoke-Expression
+```
 
-
-⦁	Please run the test on each storage unit.  Also label them so we know which file comes from the Compellent and PowerStore units. 
+⦁	Please run the test on one node.  Also be resonsible and learn how to check drivers in powershell. 
+⦁ Thank you to Mujibar who supplied to original PowerShell and i updated to compare the file to the current correct installed version 
 ⦁	Next zip files and send in for review. 
 
  
