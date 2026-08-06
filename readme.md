@@ -15,7 +15,7 @@
 Link to download and administer here: 
 
 ``` Powershell
-echo targetdriverversions;[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;Invoke-Expression('$module=" targetdriverversions";$repo="PowershellScripts"'+(new-object net.webclient).DownloadFile('https://raw.githubusercontent.com/louisjreevesme/Targetdriverversions/refs/heads/main/targetdriverversions.ps1'," targetdriverversions.ps1")); targetdriverversions.ps1
+ [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -UseBasicParsing -Uri 'https://raw.githubusercontent.com/louisjreevesme/Targetdriverversions/refs/heads/main/targetdriverversions.ps1' -OutFile '.\targetdriverversions.ps1'; Unblock-File '.\targetdriverversions.ps1'; & '.\targetdriverversions.ps1'
 
 ```
 
