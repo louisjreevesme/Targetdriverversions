@@ -1,6 +1,9 @@
  ## SBE Target Driver Match
 
 <#
+Look for drivercomponents.xml file and set path before running 
+Example:
+\\clusternodename\c$\ClusterStorage\Infrastructure_1\Shares\SU1_Infrastructure_1\Updates\Packages\SBE4.2.2512.1514\CAUPlugins\01-Custom
     Script Name : SBE Target Match
     Description : Compares SBE DriverComponents.xml target versions against
                   drivers currently assigned to PnP devices.
